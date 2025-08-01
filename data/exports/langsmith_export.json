@@ -1,0 +1,79 @@
+{
+  "timestamp": "2025-07-29T17:13:28.146624",
+  "analysis_summary": {
+    "total_pharmacies": 108,
+    "agent_results_count": {
+      "rejection_agent": 80,
+      "high_dollar_agent": 100,
+      "network_agent": 108,
+      "coverage_agent": 108,
+      "patient_flip_agent": 21
+    },
+    "supervisor_insights": {
+      "total_pharmacies_analyzed": 108,
+      "high_risk_pharmacies": 0,
+      "medium_risk_pharmacies": 25,
+      "agent_performance": {
+        "rejection_agent": {
+          "avg_score": 0.546,
+          "high_risk_findings": 19,
+          "total_findings": 80
+        },
+        "high_dollar_agent": {
+          "avg_score": 0.533,
+          "high_risk_findings": 22,
+          "total_findings": 100
+        },
+        "network_agent": {
+          "avg_score": 0.356,
+          "high_risk_findings": 0,
+          "total_findings": 108
+        },
+        "coverage_agent": {
+          "avg_score": 0.806,
+          "high_risk_findings": 82,
+          "total_findings": 108
+        },
+        "patient_flip_agent": {
+          "avg_score": 0.371,
+          "high_risk_findings": 1,
+          "total_findings": 21
+        }
+      },
+      "cross_agent_patterns": {
+        "conflicting_signals_count": 34,
+        "high_consistency_count": 23,
+        "agent_agreement_analysis": {},
+        "double_penalty_instances": 0
+      },
+      "recommendations": [
+        "Many medium-risk pharmacies - consider adjusting thresholds",
+        "Multiple conflicting signals detected - review agent weights",
+        "High agent agreement detected - consider increasing confidence threshold"
+      ]
+    }
+  },
+  "agent_communication": {
+    "coverage_agent": {
+      "findings": 108
+    },
+    "patient_flip_agent": {
+      "findings": 21
+    },
+    "high_dollar_agent": {
+      "findings": 100
+    },
+    "rejection_agent": {
+      "findings": 80
+    },
+    "network_agent": {
+      "findings": 108
+    }
+  },
+  "cross_agent_patterns": {
+    "high_risk_agreement": 45,
+    "conflicting_signals": 12,
+    "consistent_scoring": 38,
+    "outlier_detection": 13
+  }
+}
